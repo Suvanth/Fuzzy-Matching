@@ -14635,7 +14635,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">string1</span> <span class="o">==</span> <span class="n">string2</span><span class="p">)</span>  <span class="c1"># True or False equality</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The strings have a </span><span class="si">{</span><span class="n">fuzz</span><span class="o">.</span><span class="n">partial_ratio</span><span class="p">(</span><span class="n">string1</span><span class="p">,</span><span class="n">string2</span><span class="p">)</span><span class="si">}</span><span class="s1">% similarity&#39;</span><span class="p">)</span> <span class="c1"># Degree to which we belive the strings to be matching</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The strings have a </span><span class="si">{</span><span class="n">fuzz</span><span class="o">.</span><span class="n">partial_ratio</span><span class="p">(</span><span class="n">string1</span><span class="p">,</span><span class="n">string2</span><span class="p">)</span><span class="si">}</span><span class="s1">% similarity&#39;</span><span class="p">)</span> <span class="c1"># Degree to which we believe the strings to be matching</span>
 </pre></div>
 
      </div>
@@ -14832,7 +14832,7 @@ FLP
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The above codeblock shows that the Soundex algorithm produces similar codes showing similar sounding words, but metaphone shows that they sound the exact same. Levenshtein distance doesnt produce a satifatory result with just 71% similarity.</p>
+<p>The above codeblock shows that the Soundex algorithm produces similar codes showing similar sounding words, but metaphone shows that they sound the exact same. Levenshtein distance doesn't produce a satisfactory result with just 71% similarity.</p>
 
 </div>
 </div>
@@ -14847,7 +14847,7 @@ FLP
 <h3 id="Cosine-Similarity">Cosine Similarity<a class="anchor-link" href="#Cosine-Similarity">&#182;</a></h3><p>For cosine similarity between two terms we make use of the following identity</p>
 <p>cos(θ) = X ⋅ Y / |X| . |Y|</p>
 <p><em>We can obtain the vector of our words using the Bag of words encoding technique.</em></p>
-<p>We have two key values to consider cos(90) and cos(0). If the value of thetha is 90 that results in our identity producing 0 showing no similarity. if the value of theta is 0 that results in our identity producing a value of 1. The result shows a percentage simialrity between the words.</p>
+<p>We have two key values to consider cos(90) and cos(0). If the value of thetha is 90 that results in our identity producing 0 showing no similarity. if the value of theta is 0 that results in our identity producing a value of 1. The result shows a percentage similarity between the words.</p>
 
 </div>
 </div>
@@ -14863,7 +14863,7 @@ FLP
 <li>Ambiguity: Fuzzy matching can produce multiple possible matches, leading to uncertainty about which match is the most relevant and similar</li>
 <li>Performance: Some algorithms can be slow and struggle with large amounts of data. This necessitates the use of advanced techniques such as Dynamic programming.</li>
 <li>Sensitivity to input data: Fuzzy matching can be affected by errors in the input data, such as misspellings or incorrect capitalization.</li>
-<li>Parameter tuning: Some fuzzy matching algorithms have parameters that need to be adjusted to work optimally. Tuning is an iterative process that is often diccult to interpret performance increases/changes</li>
+<li>Parameter tuning: Some fuzzy matching algorithms have parameters that need to be adjusted to work optimally. Tuning is an iterative process that is often difficult to interpret performance increases/changes</li>
 </ul>
 
 </div>
@@ -14915,7 +14915,7 @@ FLP
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The above codeblock displays illogical results, displays the need for more advance techniques such as NLP</p>
+<p>The above codeblock displays illogical results, displays the need for more advance techniques such as NLP.</p>
 
 </div>
 </div>
@@ -15227,8 +15227,8 @@ DataFrame after Fuzzy matching:
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The similarity between both the sentences using fuzzy logic is </span><span class="si">{</span><span class="n">fuzz</span><span class="o">.</span><span class="n">ratio</span><span class="p">(</span><span class="n">string4</span><span class="p">,</span> <span class="n">string5</span><span class="p">)</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 
 
-<span class="n">string6</span> <span class="o">=</span> <span class="s2">&quot;Just a thefuz experiment&quot;</span>
-<span class="n">string7</span> <span class="o">=</span> <span class="s2">&quot;just a thefuz experiment and some code&quot;</span>
+<span class="n">string6</span> <span class="o">=</span> <span class="s2">&quot;Just a thefuzz experiment&quot;</span>
+<span class="n">string7</span> <span class="o">=</span> <span class="s2">&quot;just a thefuzz experiment and some code&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The similarity between both the sentences using fuzzy logic is </span><span class="si">{</span><span class="n">fuzz</span><span class="o">.</span><span class="n">ratio</span><span class="p">(</span><span class="n">string6</span><span class="p">,</span> <span class="n">string7</span><span class="p">)</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The similarity between both the sentences using fuzzy logic is </span><span class="si">{</span><span class="n">fuzz</span><span class="o">.</span><span class="n">partial_ratio</span><span class="p">(</span><span class="n">string6</span><span class="p">,</span> <span class="n">string7</span><span class="p">)</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 <span class="c1"># partial ratio looks at substrings within our string</span>
@@ -15261,7 +15261,7 @@ DataFrame after Fuzzy matching:
 True
 False
 The similarity between both the sentences using fuzzy logic is 96%
-The similarity between both the sentences using fuzzy logic is 74%
+The similarity between both the sentences using fuzzy logic is 75%
 The similarity between both the sentences using fuzzy logic is 96%
 The similarity between both the sentences using fuzzy logic is 49%
 The similarity between both the sentences using fuzzy logic is 52%
